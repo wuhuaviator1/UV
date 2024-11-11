@@ -1,0 +1,26 @@
+# Node.js 项目生成的文件夹和文件
+node_modules/       # 依赖包目录
+npm-debug.log       # npm 运行中的错误日志
+yarn-error.log      # yarn 错误日志
+
+# 环境配置文件
+.env                # 环境变量文件，包含敏感信息，如数据库密码
+
+# 日志文件夹
+logs                # 日志目录（如果有）
+*.log               # 所有的日志文件
+
+# 数据库相关文件（如果有）
+*.sqlite            # SQLite 数据库文件
+*.sqlite3
+
+# 临时文件
+tmp/
+temp/
+
+# OS和编辑器生成的常见文件
+.DS_Store           # macOS 系统文件
+Thumbs.db           # Windows 系统文件
+.idea/              # WebStorm/PhpStorm 项目文件
+.vscode/            # Visual Studio Code 项目文件
+*.swp               # vim 临时文件
