@@ -1148,12 +1148,6 @@ ul {
   list-style-type: none;
 }
 
-img {
-  vertical-align: top;
-  max-width: 100%;
-  display: inline-block;
-}
-
 form {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -1207,7 +1201,7 @@ figure {
 }
 
 .logo-wrap {
-  max-width: 8.75rem;
+  max-width: 3rem;
 }
 
 .logo {
@@ -1349,6 +1343,7 @@ figure {
   padding: 1rem 1.5rem;
   transition: transform .4s, color .4s, background-color .4s;
   display: flex;
+  color: var(--gray-500);
 }
 
 .primary-button-wrapper:hover {
