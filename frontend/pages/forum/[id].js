@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar/Navbar'
 
 export default function PostDetail() {
   const router = useRouter();

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar/Navbar'
 
 export default function CreatePost() {
   const router = useRouter();
