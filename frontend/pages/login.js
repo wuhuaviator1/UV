@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -15,16 +16,20 @@ export default function Login() {
   };
 
   return (
+
     <div className="login-page">
+
       <div className="login-container">
         <div className="logo-container">
-          <Image
-            src="/images/logo1.png"
-            alt="UV Logo"
-            width={200}
-            height={200}
-            priority
-          />
+          <Link href="/">
+            <Image
+                src="/images/logo1.png"
+                alt="UV Logo"
+                width={200}
+                height={200}
+                priority
+            />
+          </Link>
         </div>
         <h1>Welcome Back</h1>
         <p className="subtitle">Please login to your account</p>

@@ -8,7 +8,7 @@ const services = [
     icon: 'https://uploads-ssl.webflow.com/664ad14438ed2d6b390c3f9e/66962eeabe05e5e3a22c2bcd_course.png',
     title: 'Course Info',
     details: 'We provide real, valid and objective course information to help students plan each semester intelligently.',
-    link: 'https://uv-project.webflow.io/inner-pages/courses-page'
+    link: '/courses'
   },
   {
     icon: 'https://uploads-ssl.webflow.com/664ad14438ed2d6b390c3f9e/66962fcbf5fb75bf61749297_news.png',
@@ -20,7 +20,7 @@ const services = [
     icon: 'https://cdn.prod.website-files.com/664ad14438ed2d6b390c3f9e/66962fdacb673dc0a79107dc_postbar.png',
     title: 'Postbar',
     details: 'Provide a communication platform for students to help each other',
-    link: 'https://uv-project.webflow.io/forum1/forum4'
+    link: '/forum'
   },
   {
     icon: 'https://uploads-ssl.webflow.com/664ad14438ed2d6b390c3f9e/66962fe7c10a34a36ccf7618_dinning.png',
@@ -38,7 +38,7 @@ const services = [
     icon: 'https://uploads-ssl.webflow.com/664ad14438ed2d6b390c3f9e/6698e1aa86b8fa9393d970ad_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240718173208.png',
     title: 'AI Support',
     details: 'If anything bothers you, just ask it.',
-    link: 'http://uv-project.webflow.io/inner-pages/ai-assistants'
+    link: '/AI'
   }
 ]
 

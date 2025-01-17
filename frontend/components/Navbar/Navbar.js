@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.css';
+import Link from "next/link";
 export default function Navbar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     //
     // const toggleDropdown = () => {
     //     setIsDropdownOpen(!isDropdownOpen); // 切换下拉菜单状态
@@ -23,17 +25,16 @@ export default function Navbar() {
                 <div className="container w-container">
                     <div className="nav-wrapper">
                         {/* Logo */}
-                        <a href="/frontend/public">
+                        <Link href="/">
                             <img
                                 className={styles.logo1}
                                 src="/images/logo1.png"
                                 alt="Logo"
                             />
-                        </a>
-
+                        </Link>
                         {/* Navigation Menu */}
                         <nav role="navigation" className="nav-menu w-nav-menu">
-                            <a href="/frontend/public" className="nav-link w-nav-link">Home</a>
+                            <Link href="/" className="nav-link w-nav-link">Home</Link>
 
                             {/* Dropdown */}
                             <div className="dropdown w-dropdown"
@@ -54,11 +55,11 @@ export default function Navbar() {
                                             {/* Pages Section */}
                                             <div className="dropdown-list-wrap">
                                                 {/*<h6 className="pages-main-title">Pages</h6>*/}
-                                                <span className="dropdown-link w-dropdown-link">Courses</span>
+                                                <Link href="/courses" className="dropdown-link w-dropdown-link">Courses</Link>
                                                 <span className="dropdown-link w-dropdown-link">Library & Dining</span>
                                                 <span className="dropdown-link w-dropdown-link">Map</span>
-                                                <span className="dropdown-link w-dropdown-link">AI Assistant</span>
-                                                <span className="dropdown-link w-dropdown-link">Forum</span>
+                                                <Link href="/AI" className="dropdown-link w-dropdown-link">AI Assistant</Link>
+                                                <Link href="/forum" className="dropdown-link w-dropdown-link">Forum</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -68,9 +69,19 @@ export default function Navbar() {
 
                         {/* Login Button */}
                         <div className="nav-button-wrap">
-                            <button className="primary-button-wrapper primary-button-arrow">
-                                Log in
-                            </button>
+
+                            {isLoggedIn ? (
+                                // 如果已登录，显示 Profile 按钮
+                                <Link href="/profile" className="primary-button-wrapper primary-button-arrow">
+                                    Profile
+                                </Link>
+                            ) : (
+                                // 如果未登录，显示登录按钮
+                                <Link href="/login" className="primary-button-wrapper primary-button-arrow">
+                                    Log in
+                                </Link>
+                            )}
+
                         </div>
                     </div>
                 </div>
