@@ -59,6 +59,9 @@ export default function Navbar() {
                                                 <span className="dropdown-link w-dropdown-link">Library & Dining</span>
                                                 <span className="dropdown-link w-dropdown-link">Map</span>
                                                 <Link href="/AI" className="dropdown-link w-dropdown-link">AI Assistant</Link>
+                                                <Link href="/dining" className="dropdown-link w-dropdown-link">Dining</Link>
+                                                <Link href="/library" className="dropdown-link w-dropdown-link">Library</Link>
+                                                <Link href="/map" className="dropdown-link w-dropdown-link">Mapping</Link>
                                                 <Link href="/forum" className="dropdown-link w-dropdown-link">Forum</Link>
                                             </div>
                                         </div>
